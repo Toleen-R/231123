@@ -6,34 +6,44 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     background-color:dimgrey;
     
   }
+  
+  .navbar{
+    grid-column: 1/ span 4;
+    display: flex;
+    justify-content: space-between;
+  }
 .home-links{
     display: flex;
     flex-direction:column;
     border: 4px solid #ddd;
-    padding: 10px;
+    padding: 20px;
+    gap: 7px;
 }
 .home-btn {
   border: 4px solid #ddd;
   padding: 10px;
   display: flex;
   flex-direction:column;
+  gap: 7px;
+  justify-content: center;
   
 }
 
 .home-btn a, .home-links a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+   
 }
 
 footer {
-  grid-column: span 2;
+  grid-column: span 5;
   text-align: center;
   padding: 20px;
   background-color:chocolate;
